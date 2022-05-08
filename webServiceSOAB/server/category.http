@@ -1,0 +1,106 @@
+POST http://localhost:9191/SOAB/ws/category HTTP/1.1
+Content-type : text/xml
+
+<soap:Envelope
+xmlns:soap ="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:jets ="http://services/">
+
+    <soap:Body>
+    <jets:findCategoryById>
+       <arg0>1</arg0>
+    </jets:findCategoryById>
+    </soap:Body>
+
+</soap:Envelope>
+
+####
+
+POST http://localhost:9191/SOAB/ws/category HTTP/1.1
+Content-type : text/xml
+
+<soap:Envelope
+xmlns:soap ="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:jets ="http://services/">
+
+    <soap:Body>
+    <jets:findAllCategory>
+    </jets:findAllCategory>
+    </soap:Body>
+
+</soap:Envelope>
+
+####
+
+POST http://localhost:9191/SOAB/ws/category HTTP/1.1
+Content-type : text/xml
+
+<soap:Envelope
+xmlns:soap ="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:jets ="http://services/">
+
+    <soap:Body>
+    <jets:saveCategory>
+     <arg0>
+     <categoryName>lap</categoryName>
+     </arg0>
+    </jets:saveCategory>
+    </soap:Body>
+
+</soap:Envelope>
+
+
+####
+
+POST http://localhost:9191/SOAB/ws/category HTTP/1.1
+Content-type : text/xml
+
+<soap:Envelope
+xmlns:soap ="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:jets ="http://services/">
+
+    <soap:Body>
+    <jets:updateCategory>
+     <arg0>
+     <categoryId>3</categoryId>
+     <categoryName>tv</categoryName>
+     </arg0>
+    </jets:updateCategory>
+    </soap:Body>
+
+</soap:Envelope>
+
+
+
+#####
+
+POST http://localhost:9191/SOAB/ws/category HTTP/1.1
+Content-type : text/xml
+
+<soap:Envelope
+xmlns:soap ="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:jets ="http://services/">
+
+    <soap:Body>
+    <jets:deleteCategory>
+     <arg0>52</arg0>
+    </jets:deleteCategory>
+    </soap:Body>
+
+</soap:Envelope>
+
+
+#####
+POST http://localhost:9191/SOAB/ws/category HTTP/1.1
+Content-type : text/xml
+
+<soap:Envelope
+xmlns:soap ="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:jets ="http://services/">
+
+    <soap:Body>
+    <jets:getAllProductsByCatgeoryId>
+       <arg0>1</arg0>
+    </jets:getAllProductsByCatgeoryId>
+    </soap:Body>
+
+</soap:Envelope>

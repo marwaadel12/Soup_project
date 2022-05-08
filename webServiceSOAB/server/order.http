@@ -1,0 +1,79 @@
+POST http://localhost:9191/SOAB/ws/order HTTP/1.1
+Content-type : text/xml
+
+<soap:Envelope
+xmlns:soap ="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:jets ="http://services/">
+
+    <soap:Body>
+    <jets:findOrderById>
+       <arg0>8</arg0>
+    </jets:findOrderById>
+    </soap:Body>
+
+</soap:Envelope>
+
+####
+
+POST http://localhost:9191/SOAB/ws/order HTTP/1.1
+Content-type : text/xml
+
+<soap:Envelope
+xmlns:soap ="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:jets ="http://services/">
+
+    <soap:Body>
+    <jets:updateOrder>
+       <arg0>
+       <description>hhhh</description>
+        <email>marwa@gmail.com</email>
+        <id>8</id>
+        <phoneNumber>12345</phoneNumber>
+        <totalPrice>6565.00</totalPrice>
+       </arg0>
+    </jets:updateOrder>
+    </soap:Body>
+
+</soap:Envelope>
+
+
+####
+
+POST http://localhost:9191/SOAB/ws/order HTTP/1.1
+Content-type : text/xml
+
+<soap:Envelope
+xmlns:soap ="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:jets ="http://services/">
+
+    <soap:Body>
+    <jets:deleteOrder>
+       <arg0>3</arg0>
+    </jets:deleteOrder>
+    </soap:Body>
+
+</soap:Envelope>
+
+
+
+####
+
+POST http://localhost:9191/SOAB/ws/order HTTP/1.1
+Content-type : text/xml
+
+<soap:Envelope
+xmlns:soap ="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:jets ="http://services/">
+
+    <soap:Body>
+    <jets:saveOrder>
+       <arg0>
+       <description>blblbl</description>
+        <email>marwa@gmail.com</email>
+        <phoneNumber>12345</phoneNumber>
+        <totalPrice>6565.00</totalPrice>
+       </arg0>
+    </jets:saveOrder>
+    </soap:Body>
+
+</soap:Envelope>

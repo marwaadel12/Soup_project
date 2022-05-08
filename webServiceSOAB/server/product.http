@@ -1,0 +1,144 @@
+POST http://localhost:9191/SOAB/ws/product HTTP/1.1
+Content-type : text/xml
+
+<soap:Envelope
+xmlns:soap ="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:jets ="http://services/">
+
+    <soap:Body>
+    <jets:findProductById>
+       <arg0>1</arg0>
+    </jets:findProductById>
+    </soap:Body>
+
+</soap:Envelope>
+
+
+###
+
+POST http://localhost:9191/SOAB/ws/product  HTTP/1.1
+Content-type : text/xml
+
+<soap:Envelope
+xmlns:soap ="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:jets ="http://services/">
+
+    <soap:Body>
+    <jets:saveProduct>
+        <arg0>
+        <id>1</id>
+        <description>good product</description>
+        <name>Dell</name>
+        <price>5</price>
+        <quantity>3</quantity>
+        <category>
+          <categoryId>1</categoryId>
+          <categoryName>Computer</categoryName>
+        </category>
+        </arg0>
+    </jets:saveProduct>
+    </soap:Body>
+
+</soap:Envelope>
+
+###
+
+POST http://localhost:9191/SOAB/ws/product  HTTP/1.1
+Content-type : text/xml
+
+<soap:Envelope
+xmlns:soap ="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:jets ="http://services/">
+
+    <soap:Body>
+    <jets:deleteProduct>
+        <arg0>4</arg0>
+    </jets:deleteProduct>
+    </soap:Body>
+
+</soap:Envelope>
+
+
+###
+
+POST http://localhost:9191/SOAB/ws/product  HTTP/1.1
+Content-type : text/xml
+
+<soap:Envelope
+xmlns:soap ="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:jets ="http://services/">
+
+    <soap:Body>
+    <jets:updateProduct>
+       <arg0>
+        <id>3</id>
+        <description>hi</description>
+        <name>Dell</name>
+        <price>5</price>
+        <quantity>3</quantity>
+        <category>
+          <categoryId>1</categoryId>
+          <categoryName>Computer</categoryName>
+        </category>
+        </arg0>
+    </jets:updateProduct>
+    </soap:Body>
+
+</soap:Envelope>
+
+
+###
+
+POST http://localhost:9191/SOAB/ws/product  HTTP/1.1
+Content-type : text/xml
+
+<soap:Envelope
+xmlns:soap ="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:jets ="http://services/">
+
+    <soap:Body>
+    <jets:findAllProducts>
+    </jets:findAllProducts>
+    </soap:Body>
+
+</soap:Envelope>
+
+
+###
+
+POST http://localhost:9191/SOAB/ws/product  HTTP/1.1
+Content-type : text/xml
+
+<soap:Envelope
+xmlns:soap ="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:jets ="http://services/">
+
+    <soap:Body>
+    <jets:findProductByName>
+    <arg0>Dell</arg0>
+    </jets:findProductByName>
+    </soap:Body>
+
+</soap:Envelope>
+
+
+
+###
+
+POST http://localhost:9191/SOAB/ws/product  HTTP/1.1
+Content-type : text/xml
+
+<soap:Envelope
+xmlns:soap ="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:jets ="http://services/">
+
+    <soap:Body>
+    <jets:findProductByPrice>
+    <arg0>5</arg0>
+    </jets:findProductByPrice>
+    </soap:Body>
+
+</soap:Envelope>
+
+
+###

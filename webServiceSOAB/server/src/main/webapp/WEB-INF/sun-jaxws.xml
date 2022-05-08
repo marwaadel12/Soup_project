@@ -1,0 +1,36 @@
+<endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime" version="2.0">
+
+
+    <endpoint
+        name="AdminService"
+        implementation="services.AdminRepoImpl"
+        url-pattern="/ws/ad" />
+
+    <endpoint
+        name="CartService"
+        implementation="services.CartRepoImpl"
+        url-pattern="/ws/cart" />
+
+
+    <endpoint
+        name="CategoryService"
+        implementation="services.CategoryRepoImpl"
+        url-pattern="/ws/category" />
+
+    <endpoint
+        name="CustomerService"
+        implementation="services.CustomerRepoImpl"
+        url-pattern="/ws/customer" />
+
+    <endpoint
+        name="OrderService"
+        implementation="services.OrderRepoImpl"
+        url-pattern="/ws/order" />
+
+    <endpoint
+        name="ProductService"
+        implementation="services.ProductRepoImpl"
+        url-pattern="/ws/product" />
+
+
+</endpoints>
