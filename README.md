@@ -1,6 +1,9 @@
 # Soap_project
 E-commerc Soap_project
 
+# ⚙ Postman documentation
+https://documenter.getpostman.com/view/14914274/UyxdL9cH
+
 
 # ⚙ Features
 * Add product
@@ -33,7 +36,12 @@ E-commerc Soap_project
 * Maven
 * JPA
 * MySQL
-* Soap servecis
+* JAX-WS (Metro)
+* JSON-B
+* JAX-B
+* Tomcat
+* Postman
+
 
 
 # 🛠 How to run
