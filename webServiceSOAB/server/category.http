@@ -82,7 +82,7 @@ xmlns:jets ="http://services/">
 
     <soap:Body>
     <jets:deleteCategory>
-     <arg0>52</arg0>
+     <arg0>302</arg0>
     </jets:deleteCategory>
     </soap:Body>
 

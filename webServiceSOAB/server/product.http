@@ -27,8 +27,8 @@ xmlns:jets ="http://services/">
     <jets:saveProduct>
         <arg0>
         <id>1</id>
-        <description>good product</description>
-        <name>Dell</name>
+        <description>very good product</description>
+        <name>hp</name>
         <price>5</price>
         <quantity>3</quantity>
         <category>
@@ -52,7 +52,7 @@ xmlns:jets ="http://services/">
 
     <soap:Body>
     <jets:deleteProduct>
-        <arg0>4</arg0>
+        <arg0>18</arg0>
     </jets:deleteProduct>
     </soap:Body>
 

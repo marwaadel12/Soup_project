@@ -26,10 +26,10 @@ xmlns:jets ="http://services/">
     <soap:Body>
     <jets:updateUser>
     <arg0>
-        <email>hamada</email>
+        <email>hammmmmada</email>
         <id>4</id>
         <pass>1253</pass>
-        <userName>hamda</userName>
+        <userName>hammmmmmda</userName>
     </arg0>
     </jets:updateUser>
     </soap:Body>
@@ -48,24 +48,8 @@ xmlns:jets ="http://services/">
 
     <soap:Body>
     <jets:deleteUser>
-       <arg0>10</arg0>
+       <arg0>104</arg0>
     </jets:deleteUser>
-    </soap:Body>
-
-</soap:Envelope>
-
-
-####
-POST http://localhost:9191/SOAB/ws/customer HTTP/1.1
-Content-type : text/xml
-
-<soap:Envelope
-xmlns:soap ="http://schemas.xmlsoap.org/soap/envelope/"
-xmlns:jets ="http://services/">
-
-    <soap:Body>
-    <jets:findAllUsers>
-    </jets:findAllUsers>
     </soap:Body>
 
 </soap:Envelope>
@@ -81,11 +65,26 @@ xmlns:jets ="http://services/">
     <soap:Body>
     <jets:saveUser>
     <arg0>
-        <email>new</email>
-        <pass>1253</pass>
-        <userName>new</userName>
+        <email>neew@gmail</email>
+        <pass>12538</pass>
+        <userName>marrwa</userName>
     </arg0>
     </jets:saveUser>
+    </soap:Body>
+
+</soap:Envelope>
+
+####
+POST http://localhost:9191/SOAB/ws/customer HTTP/1.1
+Content-type : text/xml
+
+<soap:Envelope
+xmlns:soap ="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:jets ="http://services/">
+
+    <soap:Body>
+    <jets:findAllUsers>
+    </jets:findAllUsers>
     </soap:Body>
 
 </soap:Envelope>

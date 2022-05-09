@@ -7,7 +7,7 @@ xmlns:jets ="http://services/">
 
     <soap:Body>
     <jets:findOrderById>
-       <arg0>8</arg0>
+       <arg0>7</arg0>
     </jets:findOrderById>
     </soap:Body>
 
@@ -27,7 +27,7 @@ xmlns:jets ="http://services/">
        <arg0>
        <description>hhhh</description>
         <email>marwa@gmail.com</email>
-        <id>8</id>
+        <id>7</id>
         <phoneNumber>12345</phoneNumber>
         <totalPrice>6565.00</totalPrice>
        </arg0>
@@ -48,7 +48,7 @@ xmlns:jets ="http://services/">
 
     <soap:Body>
     <jets:deleteOrder>
-       <arg0>3</arg0>
+       <arg0>33</arg0>
     </jets:deleteOrder>
     </soap:Body>
 
@@ -68,8 +68,8 @@ xmlns:jets ="http://services/">
     <soap:Body>
     <jets:saveOrder>
        <arg0>
-       <description>blblbl</description>
-        <email>marwa@gmail.com</email>
+       <description>blabla</description>
+        <email>marrwaa@gmail.com</email>
         <phoneNumber>12345</phoneNumber>
         <totalPrice>6565.00</totalPrice>
        </arg0>
